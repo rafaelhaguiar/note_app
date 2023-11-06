@@ -1,3 +1,3 @@
 # note_app
 
-A new Flutter project.
+An app to include, end and delete texts notes
