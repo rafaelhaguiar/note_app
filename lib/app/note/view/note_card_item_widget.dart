@@ -22,7 +22,12 @@ class NoteCardItemWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(_store.noteList[index]),
+          Expanded(
+            child: Text(
+              _store.noteList[index],
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
